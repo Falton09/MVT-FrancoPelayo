@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Familia</title>
+</head>
+<body style="background-color:rgb(231, 231, 231) ;">
+
+<h1 style="background-color:rgb(46, 102, 255);text-align-last: center;">Mi Familia se Conforma Por:</h1>
+    {% for family in familia%}
+        <font face="Comic Sans MS,arial">
+        <h2>Mi {{family.familiar}}: {{family.nombre}},{{family.apellido}}</h2>
+        </font>  
+        <h4>Nacido el {{family.nacimiento.day}} Del {{family.nacimiento.month}} Del Año {{family.nacimiento.year}}. Con lo cuan tiene: {{family.edad}} Años</h4>
+        
+    {% endfor%}
+  
+</body>
+</html>
